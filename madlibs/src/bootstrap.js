@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/app';
+import home from './components/home';
 
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
 function main() {
   ReactDOM.render(
-    <App />
+    <home />
     , document.querySelector('.app-wrapper'));
 }
 
