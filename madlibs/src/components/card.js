@@ -1,12 +1,12 @@
-import React, {component} from 'react';
+import React, { Component } from 'react';
 
 import Input from './input';
 
-class Card extends component {
+class Card extends Component {
     render() {
         return (
             <div className="card">
-                {input('color') }
+                {Input('Color')}
                 {Input('Plural Noun')}
             </div>
         )

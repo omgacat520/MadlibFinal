@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Input = (title, content) => {
+const Input = (title,content) => {
         return (
                 <div className= "input">
                     <input />
