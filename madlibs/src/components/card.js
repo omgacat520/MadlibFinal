@@ -3,6 +3,26 @@ import React, { Component } from 'react';
 import Input from './input';
 import Content from './content';
 
+const INITIAL_STATE = {
+    color: '',//1
+    pluralNoun: '',//2
+    adjectiveOne:'',//3
+    celebOne: '',//4
+    adjectiveTwo: '',//5
+    nounOne: '',//6
+    numberOne: '',//7
+    numberTwo: '',//8
+    nounTwo: '',//9
+    adjectiveThree: '',//10
+    celebTwo: '',//11
+    celebThree: '',//12
+    adjectiveFour: '', //13
+    nounThree: '', //14
+    celebFour: '', //15
+    adjectiveFive: '', //16 Done!
+    contentVisible:false,
+}
+
 class Card extends Component {
     
     constructor() {
@@ -39,26 +59,7 @@ class Card extends Component {
     handleFormSubmit(event) {
         event.preventDefault()
         if(this.state.contentVisible) {
-            this.setState ({
-                color: '',//1
-                pluralNoun: '',//2
-                adjectiveOne:'',//3
-                celebOne: '',//4
-                adjectiveTwo: '',//5
-                nounOne: '',//6
-                numberOne: '',//7
-                numberTwo: '',//8
-                nounTwo: '',//9
-                adjectiveThree: '',//10
-                celebTwo: '',//11
-                celebThree: '',//12
-                adjectiveFour: '', //13
-                nounThree: '', //14
-                celebFour: '', //15
-                adjectiveFive: '', //16 Done!
-                contentVisible:false,
-    
-            })
+            this.setState (INITIAL_STATE)
         } else {
             this.setState({contentVisible: true})
         }
