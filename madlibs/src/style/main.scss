@@ -72,7 +72,7 @@
 
 .card {
     min-height: 736px;
-    max-height: 994px;
+    //max-height: 994px;
     width:1240px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, .06);
     border-radius:7px;
@@ -84,7 +84,7 @@
 
     &__inputs {
         display:grid;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(4,27px);
         grid-template-columns: repeat(4,1fr);
         
         justify-items:center;
@@ -95,7 +95,7 @@
         margin-right:83px;
     }
     &__content {
-        width:1100px;
+        width:900px;
         height:297px;
         background-color:#F2F2F2;
         justify-self:center;
@@ -138,6 +138,7 @@
 
     &__generate {
         background-color:#00CB79;
+        transform:translateY(-350px);
         @include button
     }
     &__clear {
