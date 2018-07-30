@@ -8,6 +8,12 @@
         font-size:22px;
         text-align:center;
 }
+.green {
+    background:#00CB79;
+}
+.gray {
+    background:#b3b3b3;
+}
 
 
 .home {
@@ -77,7 +83,6 @@
 
 
     &__inputs {
-        // background-color:skyblue;
         display:grid;
         grid-template-rows: repeat(4,1fr);
         grid-template-columns: repeat(4,1fr);
@@ -89,9 +94,42 @@
         margin-left:83px;
         margin-right:83px;
     }
+    &__content {
+        width:1100px;
+        height:297px;
+        background-color:#F2F2F2;
+        justify-self:center;
+        
+        margin-bottom:32px;
+
+        &__label {
+            height:18px;
+            width:18px;
+            line-height:22px;
+            background-color:black;
+            border-radius:50%;
+            color:white;
+            font-family:'Montserrat';
+            font-size:14px;
+            text-align:center;
+            //padding-top:2px;
+            display:inline-block;
+            margin:4px;
+        }
+
+
+        p {
+            font-family:'Montserrat';
+            font-size:16px;
+            font-weight:300;
+            padding:50px 47px;
+            line-height:29px;
+        }
+    }
 
     button {
         justify-self:center;
+        //transform:translateY(50%);
     }
 
     button:focus {
@@ -104,6 +142,7 @@
     }
     &__clear {
         background-color: #45B0E5;
+        transform: translateY(50%);
         @include button
     }
 
@@ -154,7 +193,7 @@
     &__number {
         grid-row:1.5/2;
 
-        background-color:#00CB79;
+        //background-color:#00CB79;
         color:white;
         font-size:19px;
         text-align:center;

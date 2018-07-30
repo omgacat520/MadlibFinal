@@ -14,4 +14,7 @@ class Home extends Component {
   }
 }
 
+//things to fix
+//placeholder, gray and green number labels, generate labels, content labels, other shit, idk
+
 export default Home;
